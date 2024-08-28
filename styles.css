@@ -1,0 +1,192 @@
+body {
+    background-color: black;
+}
+
+#log-in {
+    border: solid white;
+}
+
+.gradient {
+    background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1) 10px,
+    rgba(255, 255, 0, 1) 10px,
+    rgba(255, 255, 0, 1) 20px
+    );
+}
+
+.background-fade {
+    background-color: rgba(0, 0, 0, 1);
+    animation: background-strobe 4s ease-in-out infinite alternate;
+}
+
+div {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.horizontal-center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.upper-center {
+    margin: 0;
+    position: absolute;
+    top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.lower-center {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+}
+
+.even-lower-center {
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -80%);
+    transform: translate(-50%, -80%);
+}
+
+h1 {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.text-shadow {
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 5px rgba(93, 182, 255, 0.5);
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 1);
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: rgba(0, 255, 255, .5);
+}
+
+button:active {
+    animation: button-click 0.1s;
+}
+
+#link-container {
+    width: 300px;
+    height: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+a {
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: rgba(0, 255, 255, 1)
+}
+
+#image-holder {
+    transform-origin: center;
+    animation: rotation 10s infinite;
+    width: 175px;
+    height: 150px;
+    position: relative;
+    animation-timing-function: linear;
+    /*   border: dashed white; */
+}
+
+img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+@keyframes button-click {
+    to {width: 125px; height: 30px;}
+}
+
+@keyframes rotation {
+    0% {rotate: z 0deg}
+    100% {rotate: z 360deg}
+}
+
+@keyframes background-strobe {
+    to {background-color: rgba(0, 0, 0, .65)}
+}
+
+@media screen and (max-width: 500px) {
+
+.upper-center {
+    top: 0%;
+}
+
+#image-holder {
+    width: 175px;
+    height: 150px;
+}
+
+img {
+    width: 75%;
+    height: 75%;
+    margin-left: 28px;
+    margin-top: 18px;
+}
+
+div {
+        width: 275px;
+    }   
+}
+
