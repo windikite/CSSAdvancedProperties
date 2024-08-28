@@ -16,4 +16,4 @@ Assignment 2:
 
 I'm very happy with how this turned out, and will likely be using something similar for my portfolio in some way. 
 
-![website preview](https://raw.githubusercontent.com/Windikite/HTMLForms/master/website_preview.bmp)
+![website preview](https://raw.githubusercontent.com/Windikite/CSSAdvancedProperties/master/website_preview.bmp)
